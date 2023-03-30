@@ -30,7 +30,7 @@ class EditProfile extends DbConnection {
         $form = "
         <link rel='stylesheet' href='assets/css/logged_in.css'>
         <body>
-        <div class='container'>
+        <div class='container' id='result'>
             <h2>Public Information</h2>
             <hr>
             <form action='' method='post' enctype='multipart/form-data'>
@@ -45,7 +45,7 @@ class EditProfile extends DbConnection {
                 <label>Username</label><br>
                 <input type='text' name='username' value='$username'><br>
 
-                <input class='btn' type='submit' name='edit_public_info' value='Save'>
+                <input class='btn' type='submit' name='edit_public_info' value='Save' id='button'>
                 <a href='?action=logout'>Logout</a>
                 
             </form>
